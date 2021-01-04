@@ -6,13 +6,12 @@ dictionary = dict()
 def generate(array):
     if len(array) < 2:
         return "ERROR"
-    node = models.Node(array[0], array[1])
-    for x in range(2, len(array)):
-        node = models.Node(node, array[x])
-
+    while len(array) > 1:
+        array.sort(key=lambda i: i.count)
+        array.append(models.Node(array.pop(0), array.pop(0)))
     global dictionary
     dictionary = dict()
-    get(node)
+    get(array[0])
     return dictionary
 
 

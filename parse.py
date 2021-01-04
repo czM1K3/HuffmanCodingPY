@@ -11,9 +11,4 @@ def parse(string):
                 found = True
         if not found:
             array.append(models.Letter(string[x]))
-
-    array.sort(key=lambda i: i.count)
-
-    # for x in range(len(array)):
-    #     print(str(array[x].letter) + " - " + str(array[x].count))
     return array

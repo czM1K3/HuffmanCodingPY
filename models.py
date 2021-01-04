@@ -9,3 +9,4 @@ class Node:
     def __init__(self, _0, _1):
         self._0 = _0
         self._1 = _1
+        self.count = _0.count + _1.count

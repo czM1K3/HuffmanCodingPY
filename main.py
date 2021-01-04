@@ -15,4 +15,3 @@ def code(string):
 if __name__ == '__main__':
     code("AAABBCCD")
     code("AAABBCCDEEEEEEEEEEEEEE")
-
